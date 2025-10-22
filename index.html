@@ -51,7 +51,21 @@
             School Email: glseverson@wisc.edu <br/>
         </p>
     </footer>
+    
+     <script>
+        const PASSWORD = "LearnAboutMe"; //passcode
+        const userInput = prompt("Enter the passcode to access the site:");
+
+        if(userInput === PASSWORD){
+            document.getElementById("siteContent").style.display = "block"; // Show site
+        } else {
+            alert("Incorrect passcode. You will be redirected.");
+            window.location.href = "https://www.google.com"; // Redirect on wrong password :)
+        }
+    </script>
+    
 </body>
 </html>
+
 
 
